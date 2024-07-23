@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-times" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I am <span>SrijaObula</span><br>Graduate Student</h1>
+            <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>        
+        </div>
+    </div>
+</div>
+<!----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Srija Reddy Obula, a recent graduate with a degree in Computer Science
+                    and a year of internship experience as a Junior Security Engineer. During my formal
+                    work history, my educational background and internship have equipped me with skills
+                    in Machine Learning, Artificial Intelligence, Cyber Security, Web Technology and
+                    Cloud computing. I am an enthusiastic and adaptable team player with a commitment
+                    to excellence and a keen eye for detail. Actively seeking full time positions that
+                    aligns with my technical expertise. Let's connect and discuss how my skills align
+                    with your organization's goals.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C/C++/Python/Java/Haskell/R/Soliidty</li>
+                            <li><span>Software Engineering</span><br>DesignPatterns/OOPS</li>
+                            <li><span>Algortihms</span><br>Analysis/DataStructures/Sortings</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Present</span><br>Cyber Security Instructor at Fresnostate</li>
+                            <li><span>2021-2022</span><br>Cyber Security Engineer Intern at MetaTrace</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>MS in CS at FresnoState</li>
+                            <li><span>2018-2022</span><br>BS in Information Technology</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>College Information System integrates the Laravel framework and utilizes APIs
+                    such as Google Maps for location-based services, Twilio for SMS notifications,
+                    and SendGrid for email communication. The system is built with SQL for database
+                    management, PHP for server-side scripting, and HTML/CSS for front-end design.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Web3 Pishing Attacks Detection</h2>
+                <p>I applied my expertise in Linux, Forta Agent, and Solidity for the Ethereum blockchain
+                   to develop a phishing attack detection system. I played a key role in deploying Forta Agent
+                   on the Linux platform, integrating machine learning algorithms like SVM and Random Forest to
+                   enhance detection efficacy. Additionally, I have comprehensive knowledge of NFTs, wallets, and other blockchain
+                   technologies, which supported the overall development and effectiveness of the project. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Yoga Pose Detection</h2>
+                <p>Yoga pose detection system focusing on the back end, utilizing computer vision and machine learning. 
+                   The system will receive images or video feeds, process them using convolutional neural networks (CNNs)
+                   for pose recognition, and provide real-time feedback on the correctness of yoga poses. It will feature
+                   an API for integration with front-end applications, and a database to store user progress and analytics. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!------------------Portfolio----------->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Cyber Security Enigneer Intern</h3>
+                    <p>Collaborated with a team of cybersecurity professionals to analyze
+                       and mitigate crypto exchange attacks, gaining insights into cryptocurrency security protocols.
+                       Conducted penetration testing and vulnerability assessments to fortify system defenses
+                       against cyber threats.
+                        </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Cyber Security Instructor</h3>
+                    <p>Navigating the ever-evolving landscape of digital security.
+                       I lead comprehensive modules covering programming fundamentals, access control, authentication mechanisms, 
+                       virtual machines, cloud computing, and cyber law. My course emphasizes hands-on experience with tools like 
+                       AWS, Docker, and security frameworks, preparing students for careers in cybersecurity.
+
+                        </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Teaching Assistant</h3>
+                    <p>Navigating the ever-evolving landscape of digital security.
+                       I lead comprehensive modules covering programming fundamentals, access control, authentication mechanisms, 
+                       virtual machines, cloud computing, and cyber law. My course emphasizes hands-on experience with tools like 
+                       AWS, Docker, and security frameworks, preparing students for careers in cybersecurity.
+
+                        </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!------------Contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>obulasrijareddy@gmail.com</p>
+                <p>559-942-2290</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Srija. Made with by Easy Tutorials </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxo9BvW6Yk58IGQilN_lPPiHln2AX-1Do21RNwx7VzoxaZNdiS6-ruQUZLf3VxawFB7AA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent"})
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
